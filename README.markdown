@@ -3,7 +3,7 @@ Twig - A hackable api-powered blogging engine in Sinatra
 
 Frustrated by static generators that couldn't (easily) be used with desktop blog editing software and dreading more full-featured blog packages, I hacked on Erik Kastner's [sin blogging engine](https://github.com/kastner/sin) experiment to add some basic user authentication, bring it up to date with Sinatra and wrap the whole thing in Mongo and Rails3-mountable goodness.
 
-This currently powers the blog for Montabe at http://montabe.com/blog
+This currently powers the blog for Montabe at [http://montabe.com/blog](http://montabe.com/blog)
 
 What it doesn't do
 ----------------
@@ -23,7 +23,7 @@ Requirements
 
 * [mongoid_slug](https://github.com/papercavalier/mongoid-slug)
 
-* RDiscount(https://github.com/rtomayko/rdiscount)
+* [RDiscount](https://github.com/rtomayko/rdiscount)
 
 Getting started
 ----------------
