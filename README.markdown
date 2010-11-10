@@ -1,10 +1,12 @@
-== Twig - A hackable api-powered blogging engine in Sinatra
+Twig - A hackable api-powered blogging engine in Sinatra
+=========
 
 Frustrated by static generators that couldn't (easily) be used with desktop blog editing software and dreading more full-featured blog packages, I hacked on Erik Kastner's [sin blogging engine](https://github.com/kastner/sin) experiment to add some basic user authentication, bring it up to date with Sinatra and wrap the whole thing in Mongo and Rails3-mountable goodness.
 
 This currently powers the blog for Montabe at http://montabe.com/blog
 
-= What it doesn't do
+What it doesn't do
+----------------
 
 * It does not include any administration UI screens or functionality. You do everything via the API and the blog editing software of your choice. My recommendation: [MarsEdit](http://www.red-sweater.com/marsedit/) (Mac only)
 
@@ -22,7 +24,8 @@ This currently powers the blog for Montabe at http://montabe.com/blog
 
 * RDiscount(https://github.com/rtomayko/rdiscount)
 
-= Getting started
+Getting started
+----------------
 
 To get up and running, first you're going to need a mongo database somewhere to point to. It can be local or remote (for remote, I recommend [MongoHQ](https://mongohq.com/home)). Just edit the included mongoid.yml with your connection info and credentials (if you're doing authenticated Mongo).
 
@@ -30,7 +33,8 @@ Next up, you'll need a users file. I've included one in twig_users.yml, but make
 
 There's a config.ru for your convenience. Feel free to edit as needed.
 
-= Mounting in a Rails 3 app
+Mounting in a Rails 3 app
+----------------
 
 Here's how I do it, feel free to do it however you'd like:
 
@@ -48,7 +52,8 @@ Here's how I do it, feel free to do it however you'd like:
 
 * Final step: Change the BASE_URL constant (line 22) to the actual base url of your blog (minus the trailing slash)
 
-= TODO
+TODO
+----------------
 
 That Rails3 mounting bit is obviously entirely too difficult. Down the road, this will convert to a gem that includes some generators to handle a lot of this for you.
 
