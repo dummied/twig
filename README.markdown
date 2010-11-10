@@ -14,7 +14,8 @@ What it doesn't do
 
 * It doesn't do tags, categories or any of that other fancy-schamncy blog type stuff. It's just posts.
 
-= Requirements
+Requirements
+----------------
 
 * [sinatra](https://github.com/sinatra/sinatra)
 
