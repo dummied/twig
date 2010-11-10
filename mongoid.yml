@@ -1,0 +1,29 @@
+defaults: &defaults
+  host: localhost
+  # slaves:
+  #   - host: slave1.local
+  #     port: 27018
+  #   - host: slave2.local
+  #     port: 27019
+
+development:
+  <<: *defaults
+  host: 
+  port: 
+  username: 
+  password: 
+  database: 
+
+test:
+  <<: *defaults
+  database: redacted_test
+
+# set these environment variables on your prod server
+# set these environment variables on your prod server
+production:
+  <<: *defaults
+  host: 
+  port: 
+  username: 
+  password: 
+  database: 

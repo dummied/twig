@@ -1,0 +1,4 @@
+<article>
+  <h1><a href="<%= @post.permalink %>"><%= @post.title %></a></h1>
+  <%= RDiscount.new(@post.description).to_html %>
+</article>

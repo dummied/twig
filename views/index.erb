@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+  <article>
+    <h1><a href="<%= post.permalink %>"><%= post.title %></a></h1>
+    <p><%= twig_truncate(post.description, 300) %></p>
+    <p><a href="<%= post.permalink %>">Read more</a></p>
+  </article>
+<% end %>
+
+<nav>
+  <%= paginate(@posts, params[:page]) %>
+</nav>
