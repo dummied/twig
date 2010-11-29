@@ -59,6 +59,10 @@ class Twig < Sinatra::Base
     erb :index
   end
 
+  get '/feed' do
+    @posts = Post.order_by(["created_at", "DESC"]).paginate(:page => params[:page] || 1)
+    builder :feed
+  end
 
   get '/posts/:id' do
     @post = Post.where(:slug => params[:id]).first
